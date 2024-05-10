@@ -1,0 +1,257 @@
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+.section-padding{
+  padding: 100px 0px;
+}
+.line{
+  width:200px;
+  background: #cb7b1b;
+  height: 5px;
+  margin:10px 0px 25px;
+  border-radius: 50px;
+}
+header{
+  background-color: #fff;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+.navbar-brand{
+  text-transform: uppercase;
+  font-weight: 900;
+  border: 2px solid #8f3862;
+  padding: 0 15px;
+}
+.nav-link{
+  color: #000 !important;
+  font-weight: 600;
+
+}
+/*banner*/
+.banner{
+  position: relative;
+  background: url(images/banner.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  padding: 250px 0px 200px ;
+}
+.teffect h2{
+  margin: 0;
+  padding: 0;
+  font-size: 2.8em;
+  font-weight: 700;
+  animation: animate 3s steps(19) infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+@keyframes animate {
+  from{
+    width: 0%;
+
+  }
+  to{
+    width: 100%;
+
+  }
+}
+
+.banner p{
+  margin: 1em 0 0;
+  padding: 0;
+  font-size: 1.2em;
+  line-height:1.5em;
+color:#262626;
+
+}
+.banner a{
+  display: inline-block;
+  background-color: #8f3862;
+  color:#fff;
+  padding: 10px 25px;
+  margin-top:30px;
+  text-decoration: none;
+
+}
+/*about*/
+.about{
+  margin-top: 100px;
+}
+.about-img img{
+  width:100%;
+}
+.about-content{
+padding-top: 40px;
+}
+.about-content h2{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.about-content p{
+  font-size: 1.2rem;
+  line-height: 1.9;
+  text-align: justify;
+}
+.about-content a{
+  display: inline-block;
+  background-color: #8f3862;
+  color:#fff;
+  padding: 10px 25px;
+  text-decoration: none;
+
+}
+/*statst*/
+.stats{
+  text-align:center;
+  background: #8f3862;
+  color: #fff;
+  margin-top: 100px;
+}
+.stats i{
+  font-size: 40px;
+}
+.stats h2{
+  font-size: 40px;
+}
+/*portfolio*/
+.section-header{
+  text-align: center;
+  margin-bottom:60px;
+}
+.section-header .line{
+  margin:15px auto;
+}
+.row.port-img img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.portfolio img:hover{
+  transition: all 0.9s;
+  opacity:0.5;
+}
+.portfolio{
+  margin-top: 100px;
+}
+/*Quotes*/
+.quotes{
+  text-align: center;
+  background-color: #8f3862;
+  color: #fff;
+}
+.quotes .btn-primary{
+  background-color: #fff;
+  color: #262626;
+}
+/*service*/
+.single-service{
+  padding: 40px 20px;
+  margin:0 15px;
+  text-align: center;
+}
+.service-icon{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+
+
+}
+.service-icon i{
+  font-size: 35px;
+  color: #222;
+  display: inline-block;
+}
+.single-service:hover  i{
+transform: scale(1.8) rotate(360deg);
+  transition: 0.9s;
+  color: #8f3862;
+}
+.single-service h2{
+  line-height: 1.9;
+  font-size: 25px;
+  font-weight: 700;
+}
+.single-service:hover h2{
+  color: #8f3862;
+  transition: 0.9s;
+}
+/*contact*/
+.single-contact{
+  padding: 10%;
+  text-align: center;
+}
+.contact-icon{
+  width: 40px;
+  height: 40px;
+  margin: 15px auto;
+
+}
+.contact-icon i{
+  color: #8f3862;
+  font-size: 35px;
+
+}
+.contact .btn-primary{
+  color: #fff;
+  background-color: #8f3862;
+  border-color: #8f3862;
+}
+/*footer*/
+footer{
+  background-color: #8f3862;
+  padding: 15px 0px;
+  text-align:center;
+}
+footer p{
+  color: #fff;
+
+
+}
+/*responsive*/
+@media (min-width: 768px) and (max-width:991px){
+  .banner{
+    padding: 364px 0px 0;
+    background-position: 69% 100%;
+  }
+  .stat{
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px){
+  body{
+    overflow-x: hidden;}
+    .section-padding{
+      padding: 80px 0;
+
+    }
+    .banner{
+      padding: 150px 0 0;
+    }
+    .banner h2{
+      font-size: 1em;
+      font-weight: 500;
+    }
+    .banner p{
+      font-size: 0.7em;
+      color:#000;
+    }
+    .about-content h2{
+      font-size: 21px;
+    }
+    .about-img img{
+      width: 100%;
+    }
+    .stat{
+      margin-bottom: 30px;
+    }
+    .single-contact{
+      padding:0;
+      margin:0;
+    }
+  
+}
